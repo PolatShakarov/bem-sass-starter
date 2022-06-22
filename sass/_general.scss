@@ -1,6 +1,7 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,*::before, *::after {
@@ -26,9 +27,7 @@ img {
 }
 
 ul, ol, li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @include list-global;
 }
 
 a{
