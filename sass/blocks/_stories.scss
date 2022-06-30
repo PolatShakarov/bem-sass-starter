@@ -1,0 +1,223 @@
+.stories {
+    
+
+    &__container {
+        width: 1440px;
+        height: 745px;
+        background-color: $deep-jungle-green;
+        background-image: url("../../images/stories-disk.svg");
+        background-repeat: no-repeat;
+        background-position: calc(1190px + 50px) 645px;
+        
+    }
+
+    &__img-head{
+        margin: -10px 0 -75px -20px;
+    }
+
+    &__heading {
+        width: 932px;
+        height: 96px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        margin-left: 245px;
+        margin-top: 105px;
+        margin-bottom: 56px;
+        color: $white;
+    }
+
+    &__person{
+        display: flex;
+        margin-left: 160px;
+    }
+
+    &__persons {
+        margin-right: 30px;
+        margin-top: -57px;
+        padding-top: 45px;
+        background-image: url("../../images/tutuq.svg");
+        background-repeat: no-repeat;
+        background-position: calc(151px - 10px) 26px;
+    }
+
+    &__text {
+        width: 350px;
+        height: 100px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+        text-align: center;
+        color: $white;
+        
+    }
+    
+    &__heading-two {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #79C8C7;
+    }
+    
+    &__text-two {
+        font-family: 'Livvic';
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        color:$white;
+    }
+
+    &__img{
+        text-align: center;
+        margin-left: 145px;
+    }
+
+    &__color{
+        color: #79C8C7;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .stories {
+
+		&__container {
+            width: 768px;
+            height: 1199px;
+            background-image: url("../../images/stories-disk.svg");
+            background-repeat: no-repeat;
+            background-position: calc(519px + 50px) 1098px;
+            
+		}
+
+
+		&__heading {
+            width: 491px;
+            height: 96px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-left: 117px;
+            margin-top: 70px;
+		}
+
+		&__person {
+            flex-direction: column;
+		}
+
+		&__persons {
+            margin-bottom: 10px;
+		}
+
+		&__text {
+            width: 573px;
+            height: 75px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-left: -112px;
+            color: #FFFFFF;
+		}
+
+		&__heading-two {
+            margin-left: -188px;
+            margin-top: 16px;
+		}
+
+		&__text-two {
+            margin-left: -188px;
+            margin-top: -30px;
+		}
+
+		&__img {
+            margin-bottom: 64px;
+		}
+}
+
+}
+
+@media only screen and (max-width: 375px){
+    .stories {
+
+		&__container {
+            width: 375px;
+            height: 1410px;
+            background-image: url("../../images/stories-disk.svg");
+            background-repeat: no-repeat;
+            background-position: calc(126px + 50px) 1311px;
+		}
+
+		
+
+		&__heading {
+            width: 327px;
+            height: 128px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            margin-left: 1px;
+            margin-top: 140px;
+            color: #FFFFFF;
+		}
+
+		&__color {
+		}
+
+		&__person {
+		}
+
+		&__persons {
+            margin-left: 10px;
+            margin-top: -57px;
+            padding-top: 45px;
+            background-image: url("../../images/tutuq.svg");
+            background-repeat: no-repeat;
+            background-position: calc(-24px - 10px) 26px;
+		}
+
+		&__text {
+            width: 327px;
+            height: 100px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-left: -159px;
+            color: #FFFFFF;
+		}
+
+		&__heading-two {
+            margin-left: -136px;
+		}
+
+		&__text-two {
+            margin-left: -132px;
+		}
+
+		&__img {
+            margin-left: -28px;
+		}
+}
+
+
+}

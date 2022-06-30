@@ -1,0 +1,122 @@
+.started {
+
+    &__container {
+        display: flex;
+        width: 1440px;
+        height: 200px;
+        background-color: $light-coral;
+        background-image: url("../../images/started-disk.svg");
+        background-repeat: no-repeat;
+        background-position: calc(-8px + 10px) 55px;
+    }
+
+    &__heading {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 38px;
+        margin-left: 259px;
+        color: $sacramento-state-green;
+    }
+
+    &__link {
+        @include btn;
+
+        &:hover{
+            background-color:$sacramento-state-green;
+            color:$white;
+        }
+
+        &:active{
+            background-color:transparent;
+            color:$sacramento-state-green;
+        }
+    }
+
+    &__subject{
+        display: flex;
+    }
+
+    &__position{
+        display: flex;
+        margin-top: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .started {
+
+		&__container {
+            width: 768px;
+            height: 200px;
+            background-image: url("../../images/started-disk.svg");
+            background-repeat: no-repeat;
+            background-position: calc(-8px + 10px) 79px;
+		}
+
+		&__position {
+		}
+
+		&__subject {
+		}
+
+		&__heading {
+            width: 336px;
+            height: 32px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            margin-left: 80px;
+            margin-top: 55px;
+            color: #012F34;
+		}
+
+		&__link {
+            margin-left: 75px;
+		}
+}
+}
+
+@media only screen and (max-width: 375px){
+    .started {
+
+		&__container {
+            width: 375px;
+            height: 302px;
+            background-image: url("../../images/started-disk.svg");
+            background-repeat: no-repeat;
+            background-position: calc(-10px + 10px) 181px;
+		}
+
+		&__position {
+            flex-direction: column;
+		}
+
+		&__subject {
+		}
+
+		&__heading {
+            width: 327px;
+            height: 64px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            margin-left: 10px;
+            text-align: center;
+            color: #012F34;
+		}
+
+		&__link {
+            margin-left: 94px;
+            margin-right: 98px;
+            margin-top: -7px;
+            padding: 10px 33px;
+		}
+}
+
+}

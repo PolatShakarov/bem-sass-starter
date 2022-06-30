@@ -4,24 +4,15 @@
 }
 
 .hero__link:hover {
-    background-color: transparent;
-    border: 1px solid #FCB72B;
-    color: #FCB72B;
+    background-color: $white;
+    border: 1px solid $white;
+    color:$dark-green;
 }
 
 .hero__link:active{
-    background-color: rgba(226, 236, 236, 0.685);
+    background-color: transparent;
+    border: 1px solid #416367;
+    color: #416367;
     
 }
 
-.hero__btn{
-    @include button;
-
-    &:hover{
-        background-color: transparent;
-        border: 1px solid #FCB72B;
-        color: #FCB72B;
-    }
-
-    
-}

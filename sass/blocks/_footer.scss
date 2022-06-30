@@ -1,56 +1,195 @@
-
 .footer {
-        max-width: 1440px;
-        height: 120px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color:  #2C343E;
-        
-
-		&__container {
+      
+      max-width: 1440px;
+      height: 196px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $dark-green;
+      
+      &__container {
             display: flex;
-            align-items: center;
-            margin-top: 12px;
-            margin-left: 58px;
-		}
-
-		&__img {
-		}
-
-		&__list-2 {
+            margin-left: 165px;
+            margin-top: 48px;
+      }
+      
+      &__left {
+      }
+      
+      &__img-logo {
+            fill: #fff;
+            
+            &:hover{
+                  fill: $light-coral;
+            }
+      }
+      
+      
+      
+      &__list {
             display: flex;
-            margin-left: -320px;
-		}
-
-		&__item-mobile {
-            padding: 20px;
-		}
-
-		&__nav {
-            padding-right: 815px;
-            margin-left: -1px;
-		}
-
-		&__list {
+            margin-left: -40px;
+            margin-top: 25px;
+      }
+      
+      &__item {
+            margin-left: 40px;
+      }
+      
+      &__nav-link {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            /* identical to box height, or 156% */
+            color: $white;
+            
+            &:hover{
+                  color:$light-coral;
+                  
+            }
+            
+            &:active{
+                  color: rgba(226, 236, 236, 0.685);
+            }
+      }
+      
+      &__center {
+            margin-top: -12px;
+            margin-left: 125px;
+      }
+      
+      &__reference {
+            width: 445px;
+            height: 11px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            /* or 167% */
+            color: $white;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+      }
+      
+      &__application {
+            margin-left: 257px;
+      }
+      
+      &__list-2 {
             display: flex;
-            margin-left: 30px;
-		}
-
-		&__item {
-            padding: 33px;
-		}
-
-		&__nav-link {
-            font-family: monospace;
-            font-family: 'Space Mono', 'Arial', 'sans-serif';
-            display: inline-block;
-            color: #83888F;
-            font-size: 12px;
-            line-height: 15px;
-		}
+            margin-top: 8px;
+      }
+      
+      &__item-mobile {
+            margin-right: 16px;
+            
+            
+            
+            
+      }
+      
+      
+      
+      &__ref {            
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            /* identical to box height, or 167% */
+            color: $white;
+            margin-left: -150px;
+            margin-top: 53px;
+            opacity: 0.6;
+            
+      }
 }
 
-.instagram__img {
-    padding: 2px;
+@media only screen and (max-width:768px){
+      
+      .footer {
+            width: 768px;
+            height: 271px;
+            
+            &__container {
+                  flex-direction: column;
+            }
+            
+            &__img {
+                  margin-left: -145px;
+                  margin-bottom: 40px;
+            }
+            
+            &__list {
+                  margin-left: -185px;
+                  margin-bottom: -40px;            
+            }
+            
+            &__center {
+                  margin-top: -105px;
+                  margin-left: 100px;
+                  text-align: right;
+            }
+            
+            &__list-2 {
+                  margin-left: -400px;
+                  margin-top: 45px;
+            }
+            
+            &__ref {
+                  margin-top: -23px;
+                  margin-left: 35px;
+            }
+      }
+      
 }
+
+@media only screen and (max-width:375px){
+      
+      .footer {
+            width: 375px;
+            height: 432px;
+            
+            &__container {
+                  flex-direction: column;
+                  
+            }
+
+            
+            &__img {
+                  margin-left: -80px;
+            }
+            
+
+            
+            &__list {
+                  margin-left: -114px;
+                  margin-top: -6px;
+            }
+            
+            
+            &__center {
+                  margin-left: -228px;
+                  margin-top: 62px;
+                  text-align: center;
+            }
+            
+            
+            &__list-2 {
+                  margin-left: -317px;
+                  margin-top: 34px;
+            }
+            
+            
+            &__ref {
+                  margin-left: -387px;
+                  margin-top: 26px;
+            }
+      }
+      
+}
+
+
 

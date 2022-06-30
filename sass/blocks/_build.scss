@@ -1,0 +1,191 @@
+.build {
+    
+    &__container {
+        display: flex;
+        width: 1440px;
+        height: 684px;
+        background-color: $sacramento-state-green;
+        background-image: url("../../images/disk-hero.svg");
+        background-repeat: no-repeat;
+        background-position: calc(1332px + 16px) 440px;
+    }
+    
+    &__heading {
+        width: 445px;
+        height: 144px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        /* or 100% */
+        color: $white;
+        margin-left: 165px;
+        margin-top: 198px;
+    }
+    
+    &__experienced {
+        display: flex;
+        margin-left: 150px;
+        margin-bottom: -170px;
+        
+    }
+    
+    &__img {
+        margin-top: 198px;
+        margin-right: 39px;
+    }
+    
+    &__script {
+    }
+    
+    &__heading-one {
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        /* identical to box height, or 156% */
+        color: $light-coral;
+        margin-top: 198px;
+        margin-bottom: 16px;
+    }
+    
+    &__text {
+        width: 445px;
+        height: 50px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+        color:$white;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    
+    &__exper{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .build {
+        
+        &__container {
+            width: 768px;
+            height: 710px;
+            flex-direction: column;
+            background-image: url("../../images/disk-hero.svg");
+            background-repeat: no-repeat;
+            background-position: calc(652px + 16px) 2px;
+            
+        }
+        
+        &__heading {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: -222px;
+            margin-left: 110px;
+            color: #FFFFFF;
+        }
+        
+        &__text {
+            width: 478px;
+            height: 50px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            /* or 167% */
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+        
+        &__experienced{
+            margin-left: 100px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:375px){
+    .build {
+        
+        &__container {
+            width: 375px;
+            height: 1073px;
+            flex-direction: column;
+            background-image: url("../../images/disk-hero.svg");
+            background-repeat: no-repeat;
+            background-position: calc(264px + 16px) 2px;
+        }
+        
+        &__heading {
+            width: 240px;
+            height: 160px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            margin-left: 2px;
+            margin-top: 89px;
+            color: #FFFFFF;
+            
+        }
+        
+        &__exper {
+            margin-top: 50px;
+        }
+        
+        &__experienced {
+            flex-direction: column;
+        }
+        
+        &__img {
+            margin-bottom: -150px;
+            margin-left: 32px;
+        }
+        
+        &__script {
+            margin-top: -25px;
+        }
+        
+        &__heading-one {
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            /* identical to box height, or 156% */
+            text-align: center;
+            margin-left: -105px;
+            color: #F67E7E;
+            
+        }
+        
+        &__text {
+            width: 327px;
+            height: 75px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-left: -99px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+    
+    
+}
